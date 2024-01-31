@@ -611,7 +611,7 @@ body {
   display: none;
 }
 
-/* Style for the scrollbar container */
+/* Style for the scrollbar container
 .slider-container::-webkit-scrollbar {
   width: 8px;
 }
@@ -637,7 +637,7 @@ body {
 
 .mini-card:hover ~ .mini-card {
   transform: translateX(40px);
-}
+} */
 
 @media (max-width: 786px) {
   .mini-card {
