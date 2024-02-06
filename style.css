@@ -1005,6 +1005,7 @@ ul {
     width: 100%;
     max-width: none;
     padding-left: 1rem;
+    padding-bottom: 1rem;
   }
   .comp-logo {
     justify-content: center;
