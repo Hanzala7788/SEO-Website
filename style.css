@@ -778,7 +778,12 @@ Style for the scrollbar container .slider-container::-webkit-scrollbar {
   padding: 0 2rem;
   margin: 0 auto;
   height: 40vh;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 786px) {
+  .email-container {
+    margin-bottom: 0;
+  }
 }
 .email-content {
   max-width: 1000px;
@@ -891,31 +896,7 @@ Style for the scrollbar container .slider-container::-webkit-scrollbar {
   flex-direction: column;
   max-width: 1280px;
 }
-.footer {
-  max-width: 1280px;
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
-  padding: 1rem;
-}
-.footer-top {
-  width: 34%;
-}
-.logo-svg {
-  height: 3rem;
-  width: 3rem;
-}
-.comp-logo {
-  gap: 1rem;
-}
-.footer-grid {
-  max-width: 66%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .footer-container {
   background-color: var(--background-color);
   margin: 0 auto;
@@ -931,7 +912,6 @@ Style for the scrollbar container .slider-container::-webkit-scrollbar {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  padding-right: 2rem;
 }
 
 .footer-top {
@@ -949,67 +929,71 @@ Style for the scrollbar container .slider-container::-webkit-scrollbar {
 
 .comp-logo {
   display: flex;
-  justify-content: flex-start;
+  gap: 1rem;
   margin-bottom: -1.9rem;
 }
+
 .logo-link {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0.8rem;
   font-size: 1.28rem;
   font-weight: bold;
   color: black;
 }
+
 .social-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
+
 .filler-text {
   font-size: 1rem;
   color: #777;
 }
+
 .social {
   display: flex;
   gap: 0.8rem;
 }
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 58%;
-  grid-gap: 5.67rem;
-  padding-top: 2rem;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer-grid-heading {
   font-size: 1.05rem;
   font-weight: bold;
   color: var(--text-color);
+  margin-bottom: 1.65rem;
 }
 
 ul {
   list-style-type: none;
 }
+
 .footer-link {
   color: #777;
   font-size: 0.875rem;
 }
+
 .footer-links-list {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-.footer-grid-heading {
-  margin-bottom: 1.65rem;
-}
 
 .footer-copyright {
   color: var(--gray);
   font-size: 0.75rem;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
   padding-top: 1.15rem;
   border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1018,18 +1002,19 @@ ul {
     align-items: center;
   }
   .footer-top {
-    padding-left: 10rem;
+    width: 100%;
+    max-width: none;
+    padding-left: 1rem;
+  }
+  .comp-logo {
+    justify-content: center;
   }
   .footer-grid {
-    align-self: center;
-    justify-content: space-evenly;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .footer-top {
-    padding-left: 1rem;
-  }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
