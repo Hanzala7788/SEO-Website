@@ -484,6 +484,7 @@ body {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+
 .card .content {
   position: absolute;
   top: 0;
@@ -527,6 +528,7 @@ body {
 .card:hover .front-content p {
   opacity: 0;
 }
+
 
 .testimonial-container {
   background-color: var(--background-color);
@@ -734,11 +736,12 @@ Style for the scrollbar container .slider-container::-webkit-scrollbar {
   padding-left: 12px;
 }
 .small-desc {
+  width: 265px;
+  height: 218px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5em;
   color: #452c2c;
-  text-wrap: pretty;
+  text-wrap: wrap;
   padding: 0.5rem;
 }
 .mini-card {
